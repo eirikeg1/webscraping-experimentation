@@ -1,0 +1,29 @@
+[general]
+poll_interval_min = 5.0
+poll_interval_max = 10.0
+schedule_refresh_minutes = 30
+
+[sources]
+priority = ["espn", "sofascore"]
+
+[leagues]
+tracked = ["premier_league", "laliga", "international_friendly"]
+
+[top_teams]
+# Teams tracked across ALL competitions (Champions League, cups, etc.)
+# Other teams are only tracked in league matches.
+names = []
+
+[top_teams.extra_competitions]
+include = [
+    "champions_league",
+    "europa_league",
+    "conference_league",
+    "fa_cup",
+    "carabao_cup",
+    "copa_del_rey",
+]
+
+[server]
+host = "0.0.0.0"
+port = 8000
